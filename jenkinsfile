@@ -1,0 +1,47 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      post {
+        success {
+          archiveArtifacts 'target/*.war'
+
+        }
+
+      }
+      steps {
+        sh 'cd src/main/frontend && yarn install && yarn build && cd $WORKSPACE'
+        sh 'mvn clean install'
+        sh 'docker build -t swimple .'
+      }
+    }
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          post {
+            always {
+              junit '**/surefire-reports/*.xml'
+
+            }
+
+          }
+          steps {
+            sh 'mvn test'
+          }
+        }
+        stage('SonarQube Analysis') {
+          steps {
+            sh '''mvn sonar:sonar \\
+-Dsonar.host.url=http://sonarqube.swym.nl \\
+-Dsonar.login=55d4924f14df92d208e26fbf47c05de918e3a044'''
+          }
+        }
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'docker-compose up -d'
+      }
+    }
+  }
+}
