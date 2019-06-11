@@ -16,7 +16,9 @@ pipeline {
       sh'mvn --version'
         sh 'mvn clean install'        
       }
-    } 
+    } stage('Test') {
+      parallel {
+        
            stage('SonarQube Analysis') {
           steps {
             sh '''mvn sonar:sonar \\
