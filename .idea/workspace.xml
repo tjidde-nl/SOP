@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fc926f9-ba9c-448a-af3b-a10f82fdf280" name="Default Changelist" comment="" />
+    <list default="true" id="6fc926f9-ba9c-448a-af3b-a10f82fdf280" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="35" column="60" selection-start-line="35" selection-end-line="36" />
+            <state relative-caret-position="697">
+              <caret line="41" column="66" lean-forward="true" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -42,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -60,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -116,10 +118,10 @@
         <option value="$PROJECT_DIR$/src/main/java/API/SpeedAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/RandomService.java" />
         <option value="$PROJECT_DIR$/src/main/java/API/JaxRS.java" />
-        <option value="$PROJECT_DIR$/jenkinsfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/jenkinsfile" />
       </list>
     </option>
   </component>
@@ -189,6 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -290,12 +293,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560254621014</updated>
-      <workItem from="1560254626203" duration="2305000" />
+      <workItem from="1560254626203" duration="2761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2305000" />
+    <option name="totallyTimeSpent" value="2761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="3394" height="1456" extended-state="6" />
@@ -371,10 +374,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/sop.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="697">
+          <caret line="41" column="66" lean-forward="true" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -385,20 +391,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sop.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="35" column="60" selection-start-line="35" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>

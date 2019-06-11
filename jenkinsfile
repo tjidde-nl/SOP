@@ -10,9 +10,8 @@ pipeline {
 
       }
       steps {
-        sh 'cd src/main/frontend && yarn install && yarn build && cd $WORKSPACE'
         sh 'mvn clean install'
-        sh 'docker build -t swimple .'
+        sh 'docker build -t sop .'
       }
     }
     stage('Test') {
