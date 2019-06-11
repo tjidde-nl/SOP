@@ -4,7 +4,20 @@ pipeline {
   }
   agent any
   stages {
-  
+  stage('Docker node test') {
+        agent {
+          docker {
+            // Set both label and image
+            label 'docker'
+            image 'node:7-alpine'
+            args '--name docker-node'
+          }
+        }
+        steps {
+
+          sh 'node --version'
+        }
+      }
     stage('Build') {
       post {
         success {
@@ -13,12 +26,23 @@ pipeline {
         }
       }
       steps {
-      sh'mvn --version'
         sh 'mvn clean install'        
       }
-    } stage('Test') {
-           
-           stage('SonarQube Analysis') {
+    }
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          post {
+            always {
+              junit '**/surefire-reports/*.xml'
+            }
+
+          }
+          steps {
+            sh 'mvn test'
+          }
+        }
+        stage('SonarQube Analysis') {
           steps {
             sh '''mvn sonar:sonar \\
 -Dsonar.host.url=http://10.0.0.113:8082 \\
@@ -26,7 +50,7 @@ pipeline {
           }
         }
       }
-    
+    }
     stage('Deploy') {
       steps {
         sh 'docker build -t sop .'
