@@ -13,9 +13,10 @@ pipeline {
         }
       }
       steps {
+      sh'mvn --version'
         sh 'mvn clean install'        
       }
-    }
+    } 
            stage('SonarQube Analysis') {
           steps {
             sh '''mvn sonar:sonar \\
