@@ -3,10 +3,7 @@ package API;
 import Services.RandomService;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
 @Path("/speed")
@@ -19,5 +16,9 @@ public class SpeedAPI {
     @GET
     public Response getRandomSpeed(){
         return Response.ok(randomService.getRandom()).build();
+    }
+    @POST
+    public Response doSomething(String a){
+        return Response.ok(a).build();
     }
 }
