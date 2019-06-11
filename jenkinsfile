@@ -16,20 +16,7 @@ pipeline {
         sh 'mvn clean install'        
       }
     }
-    stage('Test') {
-      parallel {
-        stage('Test') {
-          post {
-            always {
-              junit '**/surefire-reports/*.xml'
-            }
-
-          }
-          steps {
-            sh 'mvn test'
-          }
-        }
-        stage('SonarQube Analysis') {
+           stage('SonarQube Analysis') {
           steps {
             sh '''mvn sonar:sonar \\
 -Dsonar.host.url=http://10.0.0.113:8082 \\
