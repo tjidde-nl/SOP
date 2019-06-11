@@ -33,7 +33,7 @@ pipeline {
           steps {
             sh '''mvn sonar:sonar \\
 -Dsonar.host.url=http://10.0.0.113:8082 \\
--Dsonar.login=55d4924f14df92d208e26fbf47c05de918e3a044'''
+-Dsonar.login=861e199a38375e07909bf31ebdd160885c76bc08'''
           }
         }
       }
