@@ -16,13 +16,21 @@ environment{DOCKER_HOST = 'tcp://127.0.0.1:2375'}
         bat 'mvn clean install -e'
       }
     }
-    stage('Test') {
-        stage('SonarQube Analysis') {
-          steps {
+    stage('SonarQube Analysis') {
+      steps {
             bat '''mvn sonar:sonar -Dsonar.host.url=http://localhost:8082 -Dsonar.login=861e199a38375e07909bf31ebdd160885c76bc08'''
           }
         }
-    }
+        stage('Maven Unit Test') {
+                  post {
+                    always {
+                      junit '**/surefire-reports/*.xml'
+                    }
+                  }
+                  steps('maven Test') {
+                    bat 'mvn test'
+                  }
+                }
     stage('Deploy') {
       steps {
         bat 'docker build -t sop .'
