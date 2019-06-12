@@ -13,7 +13,7 @@ environment{DOCKER_HOST = 'tcp://127.0.0.1:2375'}
         }
       }
       steps {
-        bat 'mvn clean install -X'
+        bat 'mvn clean install -e'
       }
     }
     stage('Test') {
