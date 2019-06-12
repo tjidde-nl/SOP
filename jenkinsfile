@@ -37,5 +37,30 @@ environment{DOCKER_HOST = 'tcp://127.0.0.1:2375'}
         bat 'docker-compose up -d'
       }
     }
+    stage('Success') {
+                steps {
+                    script {
+                        currentBuild.result = 'SUCCESS'
+                    }
+                }
+    }
+  }
+   post {
+          changed {
+              script {
+                  if (currentBuild.result == 'FAILURE') {
+                      step([$class           : 'Mailer',
+                            recipients       : emailextrecipients([[$class: 'CulpritsRecipientProvider'],
+                                                                   [$class: 'RequesterRecipientProvider']]),
+                            sendToIndividuals: true])
+                  }
+                  if (currentBuild.result == 'SUCCESS') {
+                      step([$class           : 'Mailer',
+                            recipients       : emailextrecipients([[$class: 'CulpritsRecipientProvider'],
+                                                                   [$class: 'DevelopersRecipientProvider']]),
+                            sendToIndividuals: true])
+                  }
+              }
+          }
   }
 }
