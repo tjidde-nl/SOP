@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fc926f9-ba9c-448a-af3b-a10f82fdf280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/SopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,16 +44,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SopTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -131,8 +131,8 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/main/java/API/SpeedAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/testApi.java" />
-        <option value="$PROJECT_DIR$/jenkinsfile" />
         <option value="$PROJECT_DIR$/src/test/java/SopTest.java" />
+        <option value="$PROJECT_DIR$/jenkinsfile" />
       </list>
     </option>
   </component>
@@ -162,7 +162,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SOP" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -292,7 +302,7 @@
       <updated>1560254621014</updated>
       <workItem from="1560254626203" duration="10552000" />
       <workItem from="1560298109187" duration="1333000" />
-      <workItem from="1560300354778" duration="1422000" />
+      <workItem from="1560300354778" duration="1526000" />
     </task>
     <servers />
   </component>
@@ -305,7 +315,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13307000" />
+    <option name="totallyTimeSpent" value="13411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1744" y="0" width="1703" height="1447" extended-state="0" />
@@ -424,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/testApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -448,6 +451,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
