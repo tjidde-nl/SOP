@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fc926f9-ba9c-448a-af3b-a10f82fdf280" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="578">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -147,11 +148,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="978" />
-    <option name="height" value="784" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1744" />
+    <option name="width" value="1703" />
+    <option name="height" value="1447" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -160,8 +160,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +289,8 @@
       <option name="presentableId" value="Default" />
       <updated>1560254621014</updated>
       <workItem from="1560254626203" duration="10552000" />
-      <workItem from="1560298109187" duration="1025000" />
+      <workItem from="1560298109187" duration="1333000" />
+      <workItem from="1560300354778" duration="93000" />
     </task>
     <servers />
   </component>
@@ -302,13 +303,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11577000" />
+    <option name="totallyTimeSpent" value="11978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="3394" height="1456" extended-state="6" />
+    <frame x="1744" y="0" width="1703" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07018596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07060256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -326,7 +327,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32955405" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50029993" side_tool="true" visible="true" weight="0.1617536" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50029993" side_tool="true" visible="true" weight="0.16133942" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49970007" weight="0.32955405" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -440,8 +441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="578">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
     </entry>
