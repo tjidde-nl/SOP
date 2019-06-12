@@ -5,6 +5,6 @@ public class SopTest {
     @Test
     public void testCanViewHelloWorld() {
         String test = "SOP test!";
-        assertEquals("SOP tessst!", test);
+        assertEquals("SOP test!", test);
     }
 }
