@@ -1,48 +1,51 @@
 pipeline {
-environment{DOCKER_HOST = 'tcp://127.0.0.1:2375'}
- tools {
-    maven 'Maven 3.6.1'
-  }
-  agent any
-  stages {
-      stage('Build') {
-      post {
-        success {
-          archiveArtifacts 'target/*.war'
-
-        }
-      }
-      steps {
-        bat 'mvn clean install -DskipTests'
-      }
+    environment
+    {
+        DOCKER_HOST = 'tcp://127.0.0.1:2375'
     }
+    tools
+    {
+    maven 'Maven 3.6.1'
+    }
+     agent any
+     stages {
+        stage('Build') {
+            post {
+                success {
+                    archiveArtifacts 'target/*.war'
+                    }
+                }
+            steps {
+                    bat 'mvn clean install -DskipTests'
+                  }
+        }
     stage('SonarQube Analysis') {
-      steps {
+        steps {
             bat '''mvn sonar:sonar -Dsonar.host.url=http://localhost:8082 -Dsonar.login=861e199a38375e07909bf31ebdd160885c76bc08'''
           }
+    }
+    stage('Maven Unit Test') {
+        post {
+            always {
+                junit '**/surefire-reports/*.xml'
+            }
         }
-        stage('Maven Unit Test') {
-                  post {
-                    always {
-                      junit '**/surefire-reports/*.xml'
-                    }
-                  }
-                  steps('maven Test') {
-                    bat 'mvn test'
-                  }
-                }
+        steps('maven Test') {
+            bat 'mvn test'
+        }
+    }
     stage('Deploy') {
-      steps {
-        bat 'docker build -t sop .'
-        bat 'docker-compose up -d'
-      }
+        steps {
+            bat 'docker build -t sop .'
+            bat 'docker-compose up -d'
+        }
     }
     stage('Success') {
-                steps {
-                    script {
-                        currentBuild.result = 'SUCCESS'
-                    }
-                }
+        steps {
+            script {
+                currentBuild.result = 'SUCCESS'
+            }
+        }
     }
   }
 
